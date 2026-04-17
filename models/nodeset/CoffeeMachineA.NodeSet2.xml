@@ -1,0 +1,1175 @@
+<?xml version="1.0" ?>
+<UANodeSet xmlns="http://opcfoundation.org/UA/2011/03/UANodeSet.xsd" LastModified="2026-04-15T00:00:00Z">
+  <NamespaceUris>
+    <Uri>urn:openai:generated:CoffeeMachineA</Uri>
+  </NamespaceUris>
+  <Models>
+    <Model ModelUri="urn:openai:generated:CoffeeMachineA" Version="1.0.0" PublicationDate="2026-04-15T00:00:00Z"/>
+  </Models>
+  <Aliases>
+    <Alias Alias="Organizes">i=35</Alias>
+    <Alias Alias="HasComponent">i=47</Alias>
+    <Alias Alias="HasProperty">i=46</Alias>
+    <Alias Alias="HasTypeDefinition">i=40</Alias>
+    <Alias Alias="BaseObjectType">i=58</Alias>
+    <Alias Alias="FolderType">i=61</Alias>
+    <Alias Alias="BaseDataVariableType">i=63</Alias>
+    <Alias Alias="PropertyType">i=68</Alias>
+    <Alias Alias="String">i=12</Alias>
+    <Alias Alias="Double">i=11</Alias>
+    <Alias Alias="Argument">i=296</Alias>
+    <Alias Alias="HasModellingRule">i=37</Alias>
+  </Aliases>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA" BrowseName="1:CoffeeMachineA">
+    <References>
+      <Reference ReferenceType="Organizes" IsForward="false">i=85</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=58</Reference>
+    </References>
+    <DisplayName>CoffeeMachineA</DisplayName>
+    <Description>Generated object for CoffeeMachineA</Description>
+  </UAObject>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.BatchInformation" BrowseName="1:BatchInformation">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>BatchInformation</DisplayName>
+    <Description>Generated object for CoffeeMachineA.BatchInformation</Description>
+  </UAObject>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms" BrowseName="1:DeviceHealthAlarms">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>DeviceHealthAlarms</DisplayName>
+    <Description>Generated object for CoffeeMachineA.DeviceHealthAlarms</Description>
+  </UAObject>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.ErrorConditions" BrowseName="1:ErrorConditions">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>ErrorConditions</DisplayName>
+    <Description>Generated object for CoffeeMachineA.ErrorConditions</Description>
+  </UAObject>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.Parameters" BrowseName="1:Parameters">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>Parameters</DisplayName>
+    <Description>Generated object for CoffeeMachineA.Parameters</Description>
+  </UAObject>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.Recipes" BrowseName="1:Recipes">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>Recipes</DisplayName>
+    <Description>Generated object for CoffeeMachineA.Recipes</Description>
+  </UAObject>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" BrowseName="1:OffSpecAlarm">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>OffSpecAlarm</DisplayName>
+    <Description>Generated object for CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Description>
+  </UAObject>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm" BrowseName="1:MilkTankLevelAlarm">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.ErrorConditions</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>MilkTankLevelAlarm</DisplayName>
+    <Description>Generated object for CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm</Description>
+  </UAObject>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" BrowseName="1:Latte-Large">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>Latte-Large</DisplayName>
+    <Description>Generated object for CoffeeMachineA.Recipes.Latte-Large</Description>
+  </UAObject>
+    <UAObject NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" BrowseName="1:Cappuccino">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>Cappuccino</DisplayName>
+    <Description>Generated object for CoffeeMachineA.Recipes.Cappuccino</Description>
+  </UAObject>
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LimitState" BrowseName="1:LimitState">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>LimitState</DisplayName>
+    <Description>Generated object for CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LimitState</Description>
+  </UAObject>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.BatchInformation.BatchId" BrowseName="1:BatchId" ParentNodeId="ns=1;s=CoffeeMachineA.BatchInformation" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.BatchInformation</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>BatchId</DisplayName>
+    <Description>BatchId</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.BatchInformation.OrderId" BrowseName="1:OrderId" ParentNodeId="ns=1;s=CoffeeMachineA.BatchInformation" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.BatchInformation</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>OrderId</DisplayName>
+    <Description>OrderId</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.BatchInformation.SystemTime" BrowseName="1:SystemTime" ParentNodeId="ns=1;s=CoffeeMachineA.BatchInformation" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.BatchInformation</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>SystemTime</DisplayName>
+    <Description>SystemTime</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceClass" BrowseName="1:DeviceClass" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>DeviceClass</DisplayName>
+    <Description>DeviceClass</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealth" BrowseName="1:DeviceHealth" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>DeviceHealth</DisplayName>
+    <Description>DeviceHealth</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.AckedState" BrowseName="1:AckedState" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>AckedState</DisplayName>
+    <Description>AckedState</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.ActiveState" BrowseName="1:ActiveState" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>ActiveState</DisplayName>
+    <Description>ActiveState</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.BranchId" BrowseName="1:BranchId" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>BranchId</DisplayName>
+    <Description>BranchId</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.ClientUserId" BrowseName="1:ClientUserId" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>ClientUserId</DisplayName>
+    <Description>ClientUserId</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Comment" BrowseName="1:Comment" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Comment</DisplayName>
+    <Description>Comment</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.ConditionClassId" BrowseName="1:ConditionClassId" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>ConditionClassId</DisplayName>
+    <Description>ConditionClassId</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.ConditionClassName" BrowseName="1:ConditionClassName" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>ConditionClassName</DisplayName>
+    <Description>ConditionClassName</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.ConditionName" BrowseName="1:ConditionName" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>ConditionName</DisplayName>
+    <Description>ConditionName</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.ConfirmedState" BrowseName="1:ConfirmedState" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>ConfirmedState</DisplayName>
+    <Description>ConfirmedState</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.EnabledState" BrowseName="1:EnabledState" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>EnabledState</DisplayName>
+    <Description>EnabledState</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.EventId" BrowseName="1:EventId" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>EventId</DisplayName>
+    <Description>EventId</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.EventType" BrowseName="1:EventType" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>EventType</DisplayName>
+    <Description>EventType</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.InputNode" BrowseName="1:InputNode" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>InputNode</DisplayName>
+    <Description>InputNode</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.LastSeverity" BrowseName="1:LastSeverity" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>LastSeverity</DisplayName>
+    <Description>LastSeverity</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Message" BrowseName="1:Message" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Message</DisplayName>
+    <Description>Message</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.NormalState" BrowseName="1:NormalState" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>NormalState</DisplayName>
+    <Description>NormalState</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Quality" BrowseName="1:Quality" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Quality</DisplayName>
+    <Description>Quality</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.ReceiveTime" BrowseName="1:ReceiveTime" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>ReceiveTime</DisplayName>
+    <Description>ReceiveTime</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Retain" BrowseName="1:Retain" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Retain</DisplayName>
+    <Description>Retain</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Severity" BrowseName="1:Severity" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Severity</DisplayName>
+    <Description>Severity</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.SourceName" BrowseName="1:SourceName" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>SourceName</DisplayName>
+    <Description>SourceName</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.SourceNode" BrowseName="1:SourceNode" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>SourceNode</DisplayName>
+    <Description>SourceNode</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.SuppressedOrShelved" BrowseName="1:SuppressedOrShelved" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>SuppressedOrShelved</DisplayName>
+    <Description>SuppressedOrShelved</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Time" BrowseName="1:Time" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Time</DisplayName>
+    <Description>Time</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceLocationName" BrowseName="1:DeviceLocationName" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>DeviceLocationName</DisplayName>
+    <Description>DeviceLocationName</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceManual" BrowseName="1:DeviceManual" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>DeviceManual</DisplayName>
+    <Description>DeviceManual</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.DeviceRevision" BrowseName="1:DeviceRevision" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>DeviceRevision</DisplayName>
+    <Description>DeviceRevision</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.HighHighLimit" BrowseName="1:HighHighLimit" ParentNodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm" DataType="i=11" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>HighHighLimit</DisplayName>
+    <Description>HighHighLimit</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.HighLimit" BrowseName="1:HighLimit" ParentNodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm" DataType="i=11" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>HighLimit</DisplayName>
+    <Description>HighLimit</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LimitState.CurrentState" BrowseName="1:CurrentState" ParentNodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LimitState" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LimitState</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>CurrentState</DisplayName>
+    <Description>CurrentState</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LowLimit" BrowseName="1:LowLimit" ParentNodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm" DataType="i=11" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>LowLimit</DisplayName>
+    <Description>LowLimit</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LowLowLimit" BrowseName="1:LowLowLimit" ParentNodeId="ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm" DataType="i=11" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>LowLowLimit</DisplayName>
+    <Description>LowLowLimit</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.HardwareRevision" BrowseName="1:HardwareRevision" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>HardwareRevision</DisplayName>
+    <Description>HardwareRevision</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Manufacturer" BrowseName="1:Manufacturer" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Manufacturer</DisplayName>
+    <Description>Manufacturer</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Model" BrowseName="1:Model" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Model</DisplayName>
+    <Description>Model</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.CoffeeBeanLevel" BrowseName="1:CoffeeBeanLevel" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=11" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>CoffeeBeanLevel</DisplayName>
+    <Description>CoffeeBeanLevel</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.CurrentState" BrowseName="1:CurrentState" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>CurrentState</DisplayName>
+    <Description>CurrentState</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.GrinderStatus" BrowseName="1:GrinderStatus" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>GrinderStatus</DisplayName>
+    <Description>GrinderStatus</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.GrindingDuration" BrowseName="1:GrindingDuration" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=11" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>GrindingDuration</DisplayName>
+    <Description>GrindingDuration</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.HeaterStatus" BrowseName="1:HeaterStatus" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>HeaterStatus</DisplayName>
+    <Description>HeaterStatus</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.MilkTankLevel" BrowseName="1:MilkTankLevel" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>MilkTankLevel</DisplayName>
+    <Description>MilkTankLevel</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.PumpStatus" BrowseName="1:PumpStatus" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>PumpStatus</DisplayName>
+    <Description>PumpStatus</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.ServedCoffeeCount" BrowseName="1:ServedCoffeeCount" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=8" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>ServedCoffeeCount</DisplayName>
+    <Description>ServedCoffeeCount</Description>
+    <Value>
+      <Int64>0</Int64>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.ValveStatus" BrowseName="1:ValveStatus" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>ValveStatus</DisplayName>
+    <Description>ValveStatus</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.WaterTankLevel" BrowseName="1:WaterTankLevel" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=11" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>WaterTankLevel</DisplayName>
+    <Description>WaterTankLevel</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.BeverageSML" BrowseName="1:BeverageSML" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>BeverageSML</DisplayName>
+    <Description>BeverageSML</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.BeverageSize" BrowseName="1:BeverageSize" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>BeverageSize</DisplayName>
+    <Description>BeverageSize</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.CoffeeType" BrowseName="1:CoffeeType" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>CoffeeType</DisplayName>
+    <Description>CoffeeType</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.Container" BrowseName="1:Container" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Container</DisplayName>
+    <Description>Container</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.FoamAmount" BrowseName="1:FoamAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>FoamAmount</DisplayName>
+    <Description>FoamAmount</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.GroundsAmount" BrowseName="1:GroundsAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>GroundsAmount</DisplayName>
+    <Description>GroundsAmount</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.GroundsWater" BrowseName="1:GroundsWater" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>GroundsWater</DisplayName>
+    <Description>GroundsWater</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.MilkAmount" BrowseName="1:MilkAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>MilkAmount</DisplayName>
+    <Description>MilkAmount</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.PowderAmount" BrowseName="1:PowderAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>PowderAmount</DisplayName>
+    <Description>PowderAmount</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.RcpType" BrowseName="1:RcpType" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>RcpType</DisplayName>
+    <Description>RcpType</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.BeverageSML" BrowseName="1:BeverageSML" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>BeverageSML</DisplayName>
+    <Description>BeverageSML</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.BeverageSize" BrowseName="1:BeverageSize" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>BeverageSize</DisplayName>
+    <Description>BeverageSize</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.CoffeeType" BrowseName="1:CoffeeType" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>CoffeeType</DisplayName>
+    <Description>CoffeeType</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.Container" BrowseName="1:Container" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>Container</DisplayName>
+    <Description>Container</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.FoamAmount" BrowseName="1:FoamAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>FoamAmount</DisplayName>
+    <Description>FoamAmount</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.GroundsAmount" BrowseName="1:GroundsAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>GroundsAmount</DisplayName>
+    <Description>GroundsAmount</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.GroundsWater" BrowseName="1:GroundsWater" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>GroundsWater</DisplayName>
+    <Description>GroundsWater</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.MilkAmount" BrowseName="1:MilkAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>MilkAmount</DisplayName>
+    <Description>MilkAmount</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.PowderAmount" BrowseName="1:PowderAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>PowderAmount</DisplayName>
+    <Description>PowderAmount</Description>
+    <Value>
+      <Double>0</Double>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.RcpType" BrowseName="1:RcpType" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>RcpType</DisplayName>
+    <Description>RcpType</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.RevisionCounter" BrowseName="1:RevisionCounter" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>RevisionCounter</DisplayName>
+    <Description>RevisionCounter</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.SerialNumber" BrowseName="1:SerialNumber" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>SerialNumber</DisplayName>
+    <Description>SerialNumber</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.SoftwareRevision" BrowseName="1:SoftwareRevision" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
+    </References>
+    <DisplayName>SoftwareRevision</DisplayName>
+    <Description>SoftwareRevision</Description>
+    <Value>
+      <String/>
+    </Value>
+  </UAVariable>
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Acknowledge" BrowseName="1:Acknowledge" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" Executable="true" UserExecutable="true">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+    </References>
+    <DisplayName>Acknowledge</DisplayName>
+    <Description>Acknowledge</Description>
+  </UAMethod>
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.AddComment" BrowseName="1:AddComment" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" Executable="true" UserExecutable="true">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+    </References>
+    <DisplayName>AddComment</DisplayName>
+    <Description>AddComment</Description>
+  </UAMethod>
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Confirm" BrowseName="1:Confirm" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" Executable="true" UserExecutable="true">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+    </References>
+    <DisplayName>Confirm</DisplayName>
+    <Description>Confirm</Description>
+  </UAMethod>
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Disable" BrowseName="1:Disable" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" Executable="true" UserExecutable="true">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+    </References>
+    <DisplayName>Disable</DisplayName>
+    <Description>Disable</Description>
+  </UAMethod>
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm.Enable" BrowseName="1:Enable" ParentNodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm" Executable="true" UserExecutable="true">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms.OffSpecAlarm</Reference>
+    </References>
+    <DisplayName>Enable</DisplayName>
+    <Description>Enable</Description>
+  </UAMethod>
+<UAMethod NodeId="ns=1;s=CoffeeMachineA.FillCoffeeBean"
+          BrowseName="1:FillCoffeeBean"
+          ParentNodeId="ns=1;s=CoffeeMachineA"
+          Executable="true"
+          UserExecutable="true">
+  <References>
+    <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+    <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.FillCoffeeBean.InputArguments</Reference>
+  </References>
+  <DisplayName>FillCoffeeBean</DisplayName>
+</UAMethod>
+
+<UAVariable NodeId="ns=1;s=CoffeeMachineA.FillCoffeeBean.InputArguments"
+            BrowseName="0:InputArguments"
+            ParentNodeId="ns=1;s=CoffeeMachineA.FillCoffeeBean"
+            DataType="i=296"
+            ValueRank="1">
+  <References>
+    <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.FillCoffeeBean</Reference>
+  </References>
+  <Value>
+    <ListOfExtensionObject>
+      <ExtensionObject>
+        <Body>
+          <Argument>
+            <Name>Level</Name>
+            <DataType>i=11</DataType>   <!-- Double -->
+            <ValueRank>-1</ValueRank>
+            <ArrayDimensions />
+            <Description>
+              <Locale>en</Locale>
+              <Text>Coffee bean fill level in g</Text>
+            </Description>
+          </Argument>
+        </Body>
+      </ExtensionObject>
+    </ListOfExtensionObject>
+  </Value>
+</UAVariable>
+<UAMethod NodeId="ns=1;s=CoffeeMachineA.FillWaterTank"
+          BrowseName="1:FillWaterTank"
+          ParentNodeId="ns=1;s=CoffeeMachineA"
+          Executable="true"
+          UserExecutable="true">
+  <References>
+    <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+    <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.FillWaterTank.InputArguments</Reference>
+  </References>
+  <DisplayName>FillWaterTank</DisplayName>
+  <Description>Fill water tank</Description>
+</UAMethod>
+
+<UAVariable NodeId="ns=1;s=CoffeeMachineA.FillWaterTank.InputArguments"
+            BrowseName="0:InputArguments"
+            ParentNodeId="ns=1;s=CoffeeMachineA.FillWaterTank"
+            DataType="i=296"
+            ValueRank="1"
+            AccessLevel="1"
+            UserAccessLevel="1">
+  <References>
+    <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.FillWaterTank</Reference>
+  </References>
+  <DisplayName>InputArguments</DisplayName>
+  <Value>
+    <ListOfExtensionObject>
+      <ExtensionObject>
+        <Body>
+          <Argument>
+            <Name>Level</Name>
+            <DataType>i=11</DataType>
+            <ValueRank>-1</ValueRank>
+            <ArrayDimensions />
+            <Description>
+              <Locale>en</Locale>
+              <Text>Water fill level in ml</Text>
+            </Description>
+          </Argument>
+        </Body>
+      </ExtensionObject>
+    </ListOfExtensionObject>
+  </Value>
+</UAVariable>
+<UAMethod NodeId="ns=1;s=CoffeeMachineA.FillMilkTank"
+          BrowseName="1:FillMilkTank"
+          ParentNodeId="ns=1;s=CoffeeMachineA"
+          Executable="true"
+          UserExecutable="true">
+  <References>
+    <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+    <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.FillMilkTank.InputArguments</Reference>
+  </References>
+  <DisplayName>FillMilkTank</DisplayName>
+  <Description>Fill milk tank</Description>
+</UAMethod>
+
+<UAVariable NodeId="ns=1;s=CoffeeMachineA.FillMilkTank.InputArguments"
+            BrowseName="0:InputArguments"
+            ParentNodeId="ns=1;s=CoffeeMachineA.FillMilkTank"
+            DataType="i=296"
+            ValueRank="1"
+            AccessLevel="1"
+            UserAccessLevel="1">
+  <References>
+    <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.FillMilkTank</Reference>
+  </References>
+  <DisplayName>InputArguments</DisplayName>
+  <Value>
+    <ListOfExtensionObject>
+      <ExtensionObject>
+        <Body>
+          <Argument>
+            <Name>Level</Name>
+            <DataType>i=11</DataType>
+            <ValueRank>-1</ValueRank>
+            <ArrayDimensions />
+            <Description>
+              <Locale>en</Locale>
+              <Text>Milk fill level in ml</Text>
+            </Description>
+          </Argument>
+        </Body>
+      </ExtensionObject>
+    </ListOfExtensionObject>
+  </Value>
+</UAVariable>
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.MakeCoffee" BrowseName="1:MakeCoffee" ParentNodeId="ns=1;s=CoffeeMachineA" Executable="true" UserExecutable="true">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+    </References>
+    <DisplayName>MakeCoffee</DisplayName>
+    <Description>MakeCoffee</Description>
+  </UAMethod>
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.MakeCoffee.InputArguments"
+            BrowseName="0:InputArguments"
+            ParentNodeId="ns=1;s=CoffeeMachineA.MakeCoffee"
+            DataType="i=296"
+            ValueRank="1"
+            AccessLevel="1"
+            UserAccessLevel="1">
+  <References>
+    <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.MakeCoffee</Reference>
+  </References>
+  <DisplayName>InputArguments</DisplayName>
+  <Value>
+    <ListOfExtensionObject>
+      <ExtensionObject>
+        <Body>
+          <Argument>
+            <Name>RecipeName</Name>
+            <DataType>i=12</DataType>
+            <ValueRank>-1</ValueRank>
+            <ArrayDimensions />
+            <Description>
+              <Locale></Locale>
+              <Text>Recipe name to brew</Text>
+            </Description>
+          </Argument>
+        </Body>
+      </ExtensionObject>
+    </ListOfExtensionObject>
+  </Value>
+</UAVariable>
+
+<UAVariable NodeId="ns=1;s=CoffeeMachineA.MakeCoffee.OutputArguments"
+            BrowseName="0:OutputArguments"
+            ParentNodeId="ns=1;s=CoffeeMachineA.MakeCoffee"
+            DataType="i=296"
+            ValueRank="1"
+            AccessLevel="1"
+            UserAccessLevel="1">
+  <References>
+    <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.MakeCoffee</Reference>
+  </References>
+  <DisplayName>OutputArguments</DisplayName>
+  <Value>
+    <ListOfExtensionObject>
+      <ExtensionObject>
+        <Body>
+          <Argument>
+            <Name>Success</Name>
+            <DataType>i=12</DataType>
+            <ValueRank>-1</ValueRank>
+            <ArrayDimensions />
+            <Description>
+              <Locale></Locale>
+              <Text>Success flag</Text>
+            </Description>
+          </Argument>
+        </Body>
+      </ExtensionObject>
+      <ExtensionObject>
+        <Body>
+          <Argument>
+            <Name>Error</Name>
+            <DataType>i=12</DataType>
+            <ValueRank>-1</ValueRank>
+            <ArrayDimensions />
+            <Description>
+              <Locale></Locale>
+              <Text>Error message</Text>
+            </Description>
+          </Argument>
+        </Body>
+      </ExtensionObject>
+    </ListOfExtensionObject>
+  </Value>
+</UAVariable>  
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.Start" BrowseName="1:Start" ParentNodeId="ns=1;s=CoffeeMachineA" Executable="true" UserExecutable="true">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+    </References>
+    <DisplayName>Start</DisplayName>
+    <Description>Start</Description>
+  </UAMethod>
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.Stop" BrowseName="1:Stop" ParentNodeId="ns=1;s=CoffeeMachineA" Executable="true" UserExecutable="true">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+    </References>
+    <DisplayName>Stop</DisplayName>
+    <Description>Stop</Description>
+  </UAMethod>
+</UANodeSet>
