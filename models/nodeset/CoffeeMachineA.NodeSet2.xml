@@ -658,61 +658,6 @@
       <Double>0</Double>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.BeverageSML" BrowseName="1:BeverageSML" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>BeverageSML</DisplayName>
-    <Description>BeverageSML</Description>
-    <Value>
-      <String/>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.BeverageSize" BrowseName="1:BeverageSize" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>BeverageSize</DisplayName>
-    <Description>BeverageSize</Description>
-    <Value>
-      <Double>0</Double>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.CoffeeType" BrowseName="1:CoffeeType" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>CoffeeType</DisplayName>
-    <Description>CoffeeType</Description>
-    <Value>
-      <String/>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.Container" BrowseName="1:Container" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>Container</DisplayName>
-    <Description>Container</Description>
-    <Value>
-      <String/>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.FoamAmount" BrowseName="1:FoamAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>FoamAmount</DisplayName>
-    <Description>FoamAmount</Description>
-    <Value>
-      <Double>0</Double>
-    </Value>
-  </UAVariable>
   <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.GroundsAmount" BrowseName="1:GroundsAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
@@ -742,83 +687,6 @@
     </References>
     <DisplayName>MilkAmount</DisplayName>
     <Description>MilkAmount</Description>
-    <Value>
-      <Double>0</Double>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.PowderAmount" BrowseName="1:PowderAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>PowderAmount</DisplayName>
-    <Description>PowderAmount</Description>
-    <Value>
-      <Double>0</Double>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.RcpType" BrowseName="1:RcpType" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>RcpType</DisplayName>
-    <Description>RcpType</Description>
-    <Value>
-      <String/>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.BeverageSML" BrowseName="1:BeverageSML" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>BeverageSML</DisplayName>
-    <Description>BeverageSML</Description>
-    <Value>
-      <String/>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.BeverageSize" BrowseName="1:BeverageSize" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>BeverageSize</DisplayName>
-    <Description>BeverageSize</Description>
-    <Value>
-      <Double>0</Double>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.CoffeeType" BrowseName="1:CoffeeType" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>CoffeeType</DisplayName>
-    <Description>CoffeeType</Description>
-    <Value>
-      <String/>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.Container" BrowseName="1:Container" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>Container</DisplayName>
-    <Description>Container</Description>
-    <Value>
-      <String/>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.FoamAmount" BrowseName="1:FoamAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>FoamAmount</DisplayName>
-    <Description>FoamAmount</Description>
     <Value>
       <Double>0</Double>
     </Value>
@@ -854,28 +722,6 @@
     <Description>MilkAmount</Description>
     <Value>
       <Double>0</Double>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.PowderAmount" BrowseName="1:PowderAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>PowderAmount</DisplayName>
-    <Description>PowderAmount</Description>
-    <Value>
-      <Double>0</Double>
-    </Value>
-  </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino.RcpType" BrowseName="1:RcpType" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" DataType="i=12" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
-    <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Cappuccino</Reference>
-      <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
-    </References>
-    <DisplayName>RcpType</DisplayName>
-    <Description>RcpType</Description>
-    <Value>
-      <String/>
     </Value>
   </UAVariable>
   <UAVariable NodeId="ns=1;s=CoffeeMachineA.RevisionCounter" BrowseName="1:RevisionCounter" ParentNodeId="ns=1;s=CoffeeMachineA" DataType="i=12" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">

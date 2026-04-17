@@ -9,12 +9,12 @@ class MachineService:
         # Default recipe and its requirement
         self.recipes = {
             "Latte-Large": {
-                "water_amount": 100.0,
+                "grounds_water": 100.0,
                 "milk_amount": 50.0,
                 "grounds_amount": 18.0,
             },
             "Cappuccino": {
-                "water_amount": 30.0,
+                "grounds_water": 30.0,
                 "milk_amount": 120.0,
                 "grounds_amount": 12.0,
             }
@@ -49,6 +49,12 @@ class MachineService:
             "milk_alarm_state": f"ns={ns};s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LimitState.CurrentState",
             "milk_low_limit": f"ns={ns};s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LowLimit",
             "milk_low_low_limit": f"ns={ns};s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LowLowLimit",
+            "latte_grounds_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Latte-Large.GroundsAmount",
+            "latte_grounds_water": f"ns={ns};s=CoffeeMachineA.Recipes.Latte-Large.GroundsWater",
+            "latte_milk_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Latte-Large.MilkAmount",
+            "capp_grounds_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Cappuccino.GroundsAmount",
+            "capp_grounds_water": f"ns={ns};s=CoffeeMachineA.Recipes.Cappuccino.GroundsWater",
+            "capp_milk_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Cappuccino.MilkAmount",
         }
 
         # Adding the nodes from nodeset2.xml to the 
@@ -67,6 +73,16 @@ class MachineService:
         await self.write("valve_status", "CLOSED")
         await self.write("grinder_status", "OFF")
         await self.write("system_time", self.now_iso())
+
+        # Initialize the recipe nodes
+        latte = self.recipes["Latte-Large"]
+        await self.write("latte_grounds_amount", latte["grounds_amount"])
+        await self.write("latte_grounds_water", latte["grounds_water"])
+        await self.write("latte_milk_amount", latte["milk_amount"])
+        capp = self.recipes["Cappuccino"]
+        await self.write("capp_grounds_amount", capp["grounds_amount"])
+        await self.write("capp_grounds_water", capp["grounds_water"])
+        await self.write("capp_milk_amount", capp["milk_amount"])
 
     def now_iso(self) -> str:
         return datetime.now(timezone.utc).isoformat()
@@ -119,7 +135,7 @@ class MachineService:
         milk = float(await self.read("milk_tank_level") or 0)
         beans = float(await self.read("coffee_bean_level") or 0)
 
-        if water < recipe["water_amount"]:
+        if water < recipe["grounds_water"]:
             return "False", "Not enough water"
         if milk < recipe["milk_amount"]:
             return "False", "Not enough milk"
@@ -133,7 +149,7 @@ class MachineService:
         await self.write("valve_status", "OPEN")
 
         # Deduct resources
-        await self.write("water_tank_level", water - recipe["water_amount"])
+        await self.write("water_tank_level", water - recipe["grounds_water"])
         await self.write("milk_tank_level", milk - recipe["milk_amount"])
         await self.write("coffee_bean_level", beans - recipe["grounds_amount"] / 3)
 
