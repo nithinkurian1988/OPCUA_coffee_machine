@@ -8,7 +8,7 @@ class MachineService:
         self.nodes = {}
         # Default recipe and its requirement
         self.recipes = {
-            "Latte-Large": {
+            "Latte": {
                 "grounds_water": 100.0,
                 "milk_amount": 50.0,
                 "grounds_amount": 18.0,
@@ -49,9 +49,9 @@ class MachineService:
             "milk_alarm_state": f"ns={ns};s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LimitState.CurrentState",
             "milk_low_limit": f"ns={ns};s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LowLimit",
             "milk_low_low_limit": f"ns={ns};s=CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm.LowLowLimit",
-            "latte_grounds_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Latte-Large.GroundsAmount",
-            "latte_grounds_water": f"ns={ns};s=CoffeeMachineA.Recipes.Latte-Large.GroundsWater",
-            "latte_milk_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Latte-Large.MilkAmount",
+            "latte_grounds_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Latte.GroundsAmount",
+            "latte_grounds_water": f"ns={ns};s=CoffeeMachineA.Recipes.Latte.GroundsWater",
+            "latte_milk_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Latte.MilkAmount",
             "capp_grounds_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Cappuccino.GroundsAmount",
             "capp_grounds_water": f"ns={ns};s=CoffeeMachineA.Recipes.Cappuccino.GroundsWater",
             "capp_milk_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Cappuccino.MilkAmount",
@@ -87,7 +87,7 @@ class MachineService:
         await self.write("order_id", "ORDER-101")
 
         # Initialize the recipe nodes
-        latte = self.recipes["Latte-Large"]
+        latte = self.recipes["Latte"]
         await self.write("latte_grounds_amount", latte["grounds_amount"])
         await self.write("latte_grounds_water", latte["grounds_water"])
         await self.write("latte_milk_amount", latte["milk_amount"])

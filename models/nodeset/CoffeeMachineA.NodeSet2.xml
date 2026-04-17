@@ -91,13 +91,13 @@
     <DisplayName>MilkTankLevelAlarm</DisplayName>
     <Description>Generated object for CoffeeMachineA.ErrorConditions.MilkTankLevelAlarm</Description>
   </UAObject>
-  <UAObject NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" BrowseName="1:Latte-Large">
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte" BrowseName="1:Latte">
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
     </References>
-    <DisplayName>Latte-Large</DisplayName>
-    <Description>Generated object for CoffeeMachineA.Recipes.Latte-Large</Description>
+    <DisplayName>Latte</DisplayName>
+    <Description>Generated object for CoffeeMachineA.Recipes.Latte</Description>
   </UAObject>
     <UAObject NodeId="ns=1;s=CoffeeMachineA.Recipes.Cappuccino" BrowseName="1:Cappuccino">
     <References>
@@ -606,9 +606,9 @@
       <Double>0</Double>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.GroundsAmount" BrowseName="1:GroundsAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte.GroundsAmount" BrowseName="1:GroundsAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
     <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
     </References>
     <DisplayName>GroundsAmount</DisplayName>
@@ -617,9 +617,9 @@
       <Double>0</Double>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.GroundsWater" BrowseName="1:GroundsWater" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte.GroundsWater" BrowseName="1:GroundsWater" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
     <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
     </References>
     <DisplayName>GroundsWater</DisplayName>
@@ -628,9 +628,9 @@
       <Double>0</Double>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large.MilkAmount" BrowseName="1:MilkAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte-Large" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Recipes.Latte.MilkAmount" BrowseName="1:MilkAmount" ParentNodeId="ns=1;s=CoffeeMachineA.Recipes.Latte" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
     <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte-Large</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Recipes.Latte</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
     </References>
     <DisplayName>MilkAmount</DisplayName>
