@@ -55,6 +55,9 @@ class MachineService:
             "capp_grounds_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Cappuccino.GroundsAmount",
             "capp_grounds_water": f"ns={ns};s=CoffeeMachineA.Recipes.Cappuccino.GroundsWater",
             "capp_milk_amount": f"ns={ns};s=CoffeeMachineA.Recipes.Cappuccino.MilkAmount",
+            "manufacturer": f"ns={ns};s=CoffeeMachineA.Identification.Manufacturer",
+            "model": f"ns={ns};s=CoffeeMachineA.Identification.Model",
+            "device_health": f"ns={ns};s=CoffeeMachineA.DeviceHealth",
         }
 
         # Adding the nodes from nodeset2.xml to the 
@@ -73,6 +76,15 @@ class MachineService:
         await self.write("valve_status", "CLOSED")
         await self.write("grinder_status", "OFF")
         await self.write("system_time", self.now_iso())
+        await self.write("device_health", "NORMAL")
+
+        # Identification variables
+        await self.write("manufacturer", "Philips")
+        await self.write("model", "CM-100")
+
+        # Batch information variables
+        await self.write("batch_id", "BATCH-001")
+        await self.write("order_id", "ORDER-101")
 
         # Initialize the recipe nodes
         latte = self.recipes["Latte-Large"]
