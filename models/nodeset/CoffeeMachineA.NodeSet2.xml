@@ -75,6 +75,16 @@
     <DisplayName>Recipes</DisplayName>
     <Description>Generated object for CoffeeMachineA.Recipes</Description>
   </UAObject>
+
+  <UAObject NodeId="ns=1;s=CoffeeMachineA.MethodSet" BrowseName="1:MethodSet" ParentNodeId="ns=1;s=CoffeeMachineA">
+    <References>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasTypeDefinition">i=61</Reference>
+    </References>
+    <DisplayName>MethodSet</DisplayName>
+    <Description>Container for executable methods</Description>
+  </UAObject>
+
   <UAObject NodeId="ns=1;s=CoffeeMachineA.DeviceHealthAlarms.PumpFailureAlarm" BrowseName="1:PumpFailureAlarm">
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.DeviceHealthAlarms</Reference>
@@ -596,25 +606,25 @@
   <DisplayName>Enable</DisplayName>
   <Description>Enable</Description>
 </UAMethod>
-<UAMethod NodeId="ns=1;s=CoffeeMachineA.FillCoffeeBean"
+<UAMethod NodeId="ns=1;s=CoffeeMachineA.MethodSet.FillCoffeeBean"
           BrowseName="1:FillCoffeeBean"
-          ParentNodeId="ns=1;s=CoffeeMachineA"
+          ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet"
           Executable="true"
           UserExecutable="true">
   <References>
-    <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
-    <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.FillCoffeeBean.InputArguments</Reference>
+    <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet</Reference>
+    <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.MethodSet.FillCoffeeBean.InputArguments</Reference>
   </References>
   <DisplayName>FillCoffeeBean</DisplayName>
 </UAMethod>
-<UAVariable NodeId="ns=1;s=CoffeeMachineA.FillCoffeeBean.InputArguments"
-            BrowseName="0:InputArguments"
-            ParentNodeId="ns=1;s=CoffeeMachineA.FillCoffeeBean"
+<UAVariable NodeId="ns=1;s=CoffeeMachineA.MethodSet.FillCoffeeBean.InputArguments"
+            BrowseName="InputArguments"
+            ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet.FillCoffeeBean"
             DataType="i=296"
             ValueRank="1">
   <References>
     <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.FillCoffeeBean</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet.FillCoffeeBean</Reference>
   </References>
   <Value>
     <ListOfExtensionObject>
@@ -635,29 +645,29 @@
     </ListOfExtensionObject>
   </Value>
 </UAVariable>
-<UAMethod NodeId="ns=1;s=CoffeeMachineA.FillWaterTank"
+<UAMethod NodeId="ns=1;s=CoffeeMachineA.MethodSet.FillWaterTank"
           BrowseName="1:FillWaterTank"
-          ParentNodeId="ns=1;s=CoffeeMachineA"
+          ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet"
           Executable="true"
           UserExecutable="true">
   <References>
-    <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
-    <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.FillWaterTank.InputArguments</Reference>
+    <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet</Reference>
+    <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.MethodSet.FillWaterTank.InputArguments</Reference>
   </References>
   <DisplayName>FillWaterTank</DisplayName>
   <Description>Fill water tank</Description>
 </UAMethod>
 
-<UAVariable NodeId="ns=1;s=CoffeeMachineA.FillWaterTank.InputArguments"
+<UAVariable NodeId="ns=1;s=CoffeeMachineA.MethodSet.FillWaterTank.InputArguments"
             BrowseName="0:InputArguments"
-            ParentNodeId="ns=1;s=CoffeeMachineA.FillWaterTank"
+            ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet.FillWaterTank"
             DataType="i=296"
             ValueRank="1"
             AccessLevel="1"
             UserAccessLevel="1">
   <References>
     <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.FillWaterTank</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet.FillWaterTank</Reference>
   </References>
   <DisplayName>InputArguments</DisplayName>
   <Value>
@@ -679,29 +689,29 @@
     </ListOfExtensionObject>
   </Value>
 </UAVariable>
-<UAMethod NodeId="ns=1;s=CoffeeMachineA.FillMilkTank"
+<UAMethod NodeId="ns=1;s=CoffeeMachineA.MethodSet.FillMilkTank"
           BrowseName="1:FillMilkTank"
-          ParentNodeId="ns=1;s=CoffeeMachineA"
+          ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet"
           Executable="true"
           UserExecutable="true">
   <References>
-    <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
-    <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.FillMilkTank.InputArguments</Reference>
+    <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet</Reference>
+    <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.MethodSet.FillMilkTank.InputArguments</Reference>
   </References>
   <DisplayName>FillMilkTank</DisplayName>
   <Description>Fill milk tank</Description>
 </UAMethod>
 
-<UAVariable NodeId="ns=1;s=CoffeeMachineA.FillMilkTank.InputArguments"
+<UAVariable NodeId="ns=1;s=CoffeeMachineA.MethodSet.FillMilkTank.InputArguments"
             BrowseName="0:InputArguments"
-            ParentNodeId="ns=1;s=CoffeeMachineA.FillMilkTank"
+            ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet.FillMilkTank"
             DataType="i=296"
             ValueRank="1"
             AccessLevel="1"
             UserAccessLevel="1">
   <References>
     <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.FillMilkTank</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet.FillMilkTank</Reference>
   </References>
   <DisplayName>InputArguments</DisplayName>
   <Value>
@@ -723,25 +733,25 @@
     </ListOfExtensionObject>
   </Value>
 </UAVariable>
-  <UAMethod NodeId="ns=1;s=CoffeeMachineA.MakeCoffee" BrowseName="1:MakeCoffee" ParentNodeId="ns=1;s=CoffeeMachineA" Executable="true" UserExecutable="true">
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.MethodSet.MakeCoffee" BrowseName="1:MakeCoffee" ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet" Executable="true" UserExecutable="true">
     <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.MakeCoffee.InputArguments</Reference>
-      <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.MakeCoffee.OutputArguments</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.MethodSet.MakeCoffee.InputArguments</Reference>
+      <Reference ReferenceType="HasProperty">ns=1;s=CoffeeMachineA.MethodSet.MakeCoffee.OutputArguments</Reference>
     </References>
     <DisplayName>MakeCoffee</DisplayName>
     <Description>MakeCoffee</Description>
   </UAMethod>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.MakeCoffee.InputArguments"
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.MethodSet.MakeCoffee.InputArguments"
             BrowseName="0:InputArguments"
-            ParentNodeId="ns=1;s=CoffeeMachineA.MakeCoffee"
+            ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet.MakeCoffee"
             DataType="i=296"
             ValueRank="1"
             AccessLevel="1"
             UserAccessLevel="1">
   <References>
     <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.MakeCoffee</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet.MakeCoffee</Reference>
   </References>
   <DisplayName>InputArguments</DisplayName>
   <Value>
@@ -764,16 +774,16 @@
   </Value>
 </UAVariable>
 
-<UAVariable NodeId="ns=1;s=CoffeeMachineA.MakeCoffee.OutputArguments"
+<UAVariable NodeId="ns=1;s=CoffeeMachineA.MethodSet.MakeCoffee.OutputArguments"
             BrowseName="0:OutputArguments"
-            ParentNodeId="ns=1;s=CoffeeMachineA.MakeCoffee"
+            ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet.MakeCoffee"
             DataType="i=296"
             ValueRank="1"
             AccessLevel="1"
             UserAccessLevel="1">
   <References>
     <Reference ReferenceType="HasTypeDefinition">i=68</Reference>
-    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.MakeCoffee</Reference>
+    <Reference ReferenceType="HasProperty" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet.MakeCoffee</Reference>
   </References>
   <DisplayName>OutputArguments</DisplayName>
   <Value>
@@ -809,16 +819,16 @@
     </ListOfExtensionObject>
   </Value>
 </UAVariable>  
-  <UAMethod NodeId="ns=1;s=CoffeeMachineA.Start" BrowseName="1:Start" ParentNodeId="ns=1;s=CoffeeMachineA" Executable="true" UserExecutable="true">
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.MethodSet.Start" BrowseName="1:Start" ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet" Executable="true" UserExecutable="true">
     <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet</Reference>
     </References>
     <DisplayName>Start</DisplayName>
     <Description>Start</Description>
   </UAMethod>
-  <UAMethod NodeId="ns=1;s=CoffeeMachineA.Stop" BrowseName="1:Stop" ParentNodeId="ns=1;s=CoffeeMachineA" Executable="true" UserExecutable="true">
+  <UAMethod NodeId="ns=1;s=CoffeeMachineA.MethodSet.Stop" BrowseName="1:Stop" ParentNodeId="ns=1;s=CoffeeMachineA.MethodSet" Executable="true" UserExecutable="true">
     <References>
-      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA</Reference>
+      <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.MethodSet</Reference>
     </References>
     <DisplayName>Stop</DisplayName>
     <Description>Stop</Description>

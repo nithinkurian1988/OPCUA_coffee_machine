@@ -8,12 +8,13 @@ async def bind_methods(server, service) -> None:
     _logger = logging.getLogger(__name__)
     ns = service.namespace_index
 
-    start_node = server.get_node(f"ns={ns};s=CoffeeMachineA.Start")
-    stop_node = server.get_node(f"ns={ns};s=CoffeeMachineA.Stop")
-    fill_water_tank_node = server.get_node(f"ns={ns};s=CoffeeMachineA.FillWaterTank")
-    fill_milk_tank_node = server.get_node(f"ns={ns};s=CoffeeMachineA.FillMilkTank")
-    fill_coffee_bean_node = server.get_node(f"ns={ns};s=CoffeeMachineA.FillCoffeeBean")
-    make_coffee_node = server.get_node(f"ns={ns};s=CoffeeMachineA.MakeCoffee")
+    start_node = server.get_node(f"ns={ns};s=CoffeeMachineA.MethodSet.Start")
+    stop_node = server.get_node(f"ns={ns};s=CoffeeMachineA.MethodSet.Stop")
+    make_coffee_node = server.get_node(f"ns={ns};s=CoffeeMachineA.MethodSet.MakeCoffee")
+
+    fill_water_tank_node = server.get_node(f"ns={ns};s=CoffeeMachineA.MethodSet.FillWaterTank")
+    fill_milk_tank_node = server.get_node(f"ns={ns};s=CoffeeMachineA.MethodSet.FillMilkTank")
+    fill_coffee_bean_node = server.get_node(f"ns={ns};s=CoffeeMachineA.MethodSet.FillCoffeeBean")
 
     ack_node = server.get_node(f"ns={ns};s=CoffeeMachineA.DeviceHealthAlarms.PumpFailureAlarm.Acknowledge")
     confirm_node = server.get_node(f"ns={ns};s=CoffeeMachineA.DeviceHealthAlarms.PumpFailureAlarm.Confirm")
@@ -87,6 +88,5 @@ async def bind_methods(server, service) -> None:
 
     server.link_method(ack_node, acknowledge_pump_alarm_cb)
     server.link_method(confirm_node, confirm_pump_alarm_cb)
-
     server.link_method(enable_node, enable_pump_alarm_cb)
     server.link_method(disable_node, disable_pump_alarm_cb)
