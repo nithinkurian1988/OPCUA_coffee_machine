@@ -1,3 +1,5 @@
+import os
+
 from asyncua import Server, ua
 import logging
 from model_loader import load_model
@@ -45,7 +47,8 @@ async def run_server() -> None:
 async def enable_history(server, service):
     hm = server.iserver.history_manager
 
-    hm.set_storage(HistorySQLite("my_datavalue_history.sql"))
+    os.makedirs("data", exist_ok=True)
+    hm.set_storage(HistorySQLite("data/my_datavalue_history.sql"))
     await hm.init()
 
     await server.historize_node_data_change(service.nodes["water_tank_level"], period=None, count=100)
