@@ -330,7 +330,7 @@
       <Double>0</Double>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.CoffeeBeanLevel" BrowseName="1:CoffeeBeanLevel" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=11" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.CoffeeBeanLevel" BrowseName="1:CoffeeBeanLevel" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>
@@ -429,7 +429,7 @@
       <String/>
     </Value>
   </UAVariable>
-  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.WaterTankLevel" BrowseName="1:WaterTankLevel" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=11" ValueRank="-1" AccessLevel="1" UserAccessLevel="1" MinimumSamplingInterval="0">
+  <UAVariable NodeId="ns=1;s=CoffeeMachineA.Parameters.WaterTankLevel" BrowseName="1:WaterTankLevel" ParentNodeId="ns=1;s=CoffeeMachineA.Parameters" DataType="i=11" ValueRank="-1" AccessLevel="3" UserAccessLevel="3" MinimumSamplingInterval="0">
     <References>
       <Reference ReferenceType="HasComponent" IsForward="false">ns=1;s=CoffeeMachineA.Parameters</Reference>
       <Reference ReferenceType="HasTypeDefinition">i=63</Reference>

@@ -71,7 +71,6 @@ class MachineService:
                 print(f"FAILED: {key} -> {node_id} -> {e}")
  
         # This will be the initial state of the machine
-        await self.write("current_state", "Idle")
         await self.write("heater_status", "ON")
         await self.write("pump_status", "OFF")
         await self.write("valve_status", "CLOSED")
@@ -123,7 +122,7 @@ class MachineService:
 
     # Start the machine
     async def start(self) -> None:
-        await self.write("current_state", "Running")
+        await self.write("current_state", "Starting")
         await self.write("served_coffee_count", 0)
 
     # Stop the machine
@@ -233,7 +232,7 @@ class MachineService:
             return "False", f"Recipe '{recipe_name}' not found"
 
         current_state = await self.read("current_state")
-        if current_state not in {"Idle", "Running", "Brewing"}:
+        if current_state not in {"Idle", "Running", "Starting"}:
             return "False", f"Machine is not running, please start it: {current_state}"
 
         pump_status = await self.evaluate_pump_failure()

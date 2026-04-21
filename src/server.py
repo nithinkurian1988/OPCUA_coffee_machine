@@ -4,6 +4,7 @@ from model_loader import load_model
 from services import MachineService
 from simulation import MachineSimulation
 from methods import bind_methods
+from asyncua.server.history_sql import HistorySQLite
 
 async def run_server() -> None:
     _logger = logging.getLogger(__name__)
@@ -31,6 +32,7 @@ async def run_server() -> None:
     simulation = MachineSimulation(service)
 
     await service.initialize()
+    await enable_history(server, service)
 
     # Link the method nodes from the nodeset2.xml to 
     # the corresponding service methods
@@ -39,3 +41,13 @@ async def run_server() -> None:
     async with server:
         _logger.info("Starting server!")
         await simulation.run()
+
+async def enable_history(server, service):
+    hm = server.iserver.history_manager
+
+    hm.set_storage(HistorySQLite("my_datavalue_history.sql"))
+    await hm.init()
+
+    await server.historize_node_data_change(service.nodes["water_tank_level"], period=None, count=100)
+    await server.historize_node_data_change(service.nodes["milk_tank_level"], period=None, count=100)
+    await server.historize_node_data_change(service.nodes["coffee_bean_level"], period=None, count=100)
