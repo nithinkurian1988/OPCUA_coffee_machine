@@ -56,6 +56,8 @@ uaexpert/coffee_machine.uap
 
 ## 🔧 Node Functionalities
 
+The nodes in this project represent different aspects of an industrial coffee machine, including real-time process data, control operations, alarm handling, recipe definitions, and production tracking.
+
 ### 🧠 1. DeviceHealth
 
 Represents the overall health of the coffee machine.
@@ -167,9 +169,9 @@ Possible values:
 
 #### 📉 Limits
     
- - LowLimit (Double): Threshold for low level warning(200ml)
+ - LowLimit (Double): Threshold for low level warning(< 200ml)
 
- - LowLowLimit (Double): Critical level threshold(50ml)
+ - LowLowLimit (Double): Critical level threshold(< 50ml)
 
 #### 🔄 State
 
@@ -231,6 +233,7 @@ Stores time-series data in SQLite format. Currently supporting:
  - WaterTankLevel
  - CoffeeBeanLevel
 
+<img src="uaexpert/screenshots/historian_trend.png" width="600">
 
 ## ☕ How to Brew Coffee (Demo Flow)
 
@@ -290,7 +293,7 @@ Objects → CoffeeMachineA → Parameters → PumpStatus
  <img src="uaexpert/screenshots/confirm_alarm.png" width="600">
 
 ## 🚨 Milk Tank Level Alarm (Simulation)
- - Trigger Condition: MilkTankLevel < LowLimit
+ - Trigger Condition: MilkTankLevel < LowLowLimit
 
   <img src="uaexpert/screenshots/milk_tank_alarm.png" width="600">
 

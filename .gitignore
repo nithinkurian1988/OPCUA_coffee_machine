@@ -6,3 +6,4 @@ src/__pycache__/server.cpython-313.pyc
 src/__pycache__/services.cpython-313.pyc
 src/__pycache__/simulation.cpython-313.pyc
 src/services.py
+data/my_datavalue_history.sql
